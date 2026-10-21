@@ -2,6 +2,10 @@
 
 Sabyr Aslan · SE-2528
 
+**Live site:** https://asikxz008.github.io/Assigment5-web1-Aslan/
+
+**Repository:** https://github.com/asikxz008/Assigment5-web1-Aslan
+
 Nine responsive pages demonstrate JavaScript basics, DOM manipulation, and events. Each task has a separate HTML page and a short JavaScript file in `scripts/`. Navigation links connect every task.
 
 Open `index.html` in a browser. No installation or build step is needed. Task 0 opens a greeting alert automatically; close it to use the page. Open the browser developer console with F12 to see output for Tasks 0 and 1.

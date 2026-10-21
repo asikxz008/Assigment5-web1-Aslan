@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="WEB Technologies 1 Assignment 5: Calculator. Sabyr Aslan, SE-2528.">
+  <title>Task 7 | Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts/task7.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">SA</span> JavaScript Lab</a>
+      <nav class="site-nav" aria-label="Assignment tasks">
+        <a href="index.html">Task 0</a>
+        <a href="task1.html">Task 1</a>
+        <a href="task2.html">Task 2</a>
+        <a href="task3.html">Task 3</a>
+        <a href="task4.html">Task 4</a>
+        <a href="task5.html">Task 5</a>
+        <a href="task6.html">Task 6</a>
+        <a href="task7.html" aria-current="page">Task 7</a>
+        <a href="task8.html">Task 8</a>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main container" id="main">
+    <div class="page-layout">
+      <section class="page-copy" aria-labelledby="page-title">
+        <p class="eyebrow">Task 7 / Calculator</p>
+        <h1 id="page-title">Two numbers. Four possibilities.</h1>
+        <p class="lede">A small calculator for addition, subtraction, multiplication, and division.</p>
+        <dl class="task-detail">
+          <dt>Focus</dt><dd>Number conversion, arithmetic, and submit events</dd>
+          <dt>Try it</dt><dd>Use decimals or negative numbers, then try dividing by zero.</dd>
+        </dl>
+        <a class="next-link" href="task8.html">Next: Task 8 &rarr;</a>
+      </section>
+      <section class="demo-panel" aria-labelledby="demo-title">
+        <h2 id="demo-title">Simple calculator</h2>
+        <p class="panel-lead">Enter two numbers and choose an operation.</p>
+        <form id="calculator">
+          <div class="field-grid">
+            <div class="field"><label for="first-number">First number</label><input id="first-number" name="first" type="number" step="any" required placeholder="e.g. 12"></div>
+            <div class="field"><label for="second-number">Second number</label><input id="second-number" name="second" type="number" step="any" required placeholder="e.g. 4"></div>
+          </div>
+          <div class="operations">
+            <button type="submit" name="operation" value="add" aria-label="Add">+</button>
+            <button type="submit" name="operation" value="subtract" aria-label="Subtract">−</button>
+            <button type="submit" name="operation" value="multiply" aria-label="Multiply">×</button>
+            <button type="submit" name="operation" value="divide" aria-label="Divide">÷</button>
+          </div>
+        </form>
+        <div class="result-box" id="result-box" aria-live="polite" aria-atomic="true"><p id="calc-expression">Choose an operation.</p><output id="calc-result" for="first-number second-number">—</output></div>
+        <p class="demo-note">Results are displayed with up to 12 significant digits.</p>
+        <noscript><p class="demo-note">Enable JavaScript to use this demo.</p></noscript>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner"><p>WEB Technologies 1 · Assignment 5</p><p>Sabyr Aslan · SE-2528</p></div>
+  </footer>
+</body>
+</html>

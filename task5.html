@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="WEB Technologies 1 Assignment 5: Mouse Events. Sabyr Aslan, SE-2528.">
+  <title>Task 5 | Mouse Events</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts/task5.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">SA</span> JavaScript Lab</a>
+      <nav class="site-nav" aria-label="Assignment tasks">
+        <a href="index.html">Task 0</a>
+        <a href="task1.html">Task 1</a>
+        <a href="task2.html">Task 2</a>
+        <a href="task3.html">Task 3</a>
+        <a href="task4.html">Task 4</a>
+        <a href="task5.html" aria-current="page">Task 5</a>
+        <a href="task6.html">Task 6</a>
+        <a href="task7.html">Task 7</a>
+        <a href="task8.html">Task 8</a>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main container" id="main">
+    <div class="page-layout">
+      <section class="page-copy" aria-labelledby="page-title">
+        <p class="eyebrow">Task 5 / Mouse Events</p>
+        <h1 id="page-title">A page that responds to your mouse.</h1>
+        <p class="lede">Move into the box to change its color. Move out to bring the original color back.</p>
+        <dl class="task-detail">
+          <dt>Focus</dt><dd>mouseover and mouseout event listeners</dd>
+          <dt>Try it</dt><dd>Move the pointer over the box and away. Keyboard users can focus the box with Tab.</dd>
+        </dl>
+        <a class="next-link" href="task6.html">Next: Task 6 &rarr;</a>
+      </section>
+      <section class="demo-panel" aria-labelledby="demo-title">
+        <h2 id="demo-title">Move over the box</h2>
+        <p class="panel-lead">The color is changed by JavaScript event handlers.</p>
+        <div class="preview-box hover-box" id="hover-box" tabindex="0" role="region" aria-label="Mouse event preview">Move your mouse here</div>
+        <p class="status" id="mouse-status" role="status" aria-live="polite">The box is waiting for your mouse.</p>
+        <noscript><p class="demo-note">Enable JavaScript to use this demo.</p></noscript>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner"><p>WEB Technologies 1 · Assignment 5</p><p>Sabyr Aslan · SE-2528</p></div>
+  </footer>
+</body>
+</html>

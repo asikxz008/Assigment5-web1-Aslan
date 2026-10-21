@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="WEB Technologies 1 Assignment 5: Interactive To-Do List. Sabyr Aslan, SE-2528.">
+  <title>Task 8 | Interactive To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts/task8.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">SA</span> JavaScript Lab</a>
+      <nav class="site-nav" aria-label="Assignment tasks">
+        <a href="index.html">Task 0</a>
+        <a href="task1.html">Task 1</a>
+        <a href="task2.html">Task 2</a>
+        <a href="task3.html">Task 3</a>
+        <a href="task4.html">Task 4</a>
+        <a href="task5.html">Task 5</a>
+        <a href="task6.html">Task 6</a>
+        <a href="task7.html">Task 7</a>
+        <a href="task8.html" aria-current="page">Task 8</a>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main container" id="main">
+    <div class="page-layout">
+      <section class="page-copy" aria-labelledby="page-title">
+        <p class="eyebrow">Task 8 / Interactive To-Do List</p>
+        <h1 id="page-title">A little less to remember.</h1>
+        <p class="lede">Add a task, check it off, and delete it when you are done.</p>
+        <dl class="task-detail">
+          <dt>Focus</dt><dd>An array of task objects, DOM creation, and event handling</dd>
+          <dt>Try it</dt><dd>Add a few tasks, mark one as completed, then delete it.</dd>
+        </dl>
+        <a class="next-link" href="index.html">Back to Task 0 &rarr;</a>
+      </section>
+      <section class="demo-panel" aria-labelledby="demo-title">
+        <h2 id="demo-title">My to-do list</h2>
+        <p class="panel-lead">Keep a few things in order while this page is open.</p>
+        <form id="todo-form">
+          <div class="label-row"><label for="task-input">New task</label><span class="counter">Up to 120 characters</span></div>
+          <div class="todo-entry"><input id="task-input" name="task" type="text" maxlength="120" required placeholder="What do you need to do?" autocomplete="off" aria-describedby="todo-hint"><button type="submit">Add Task</button></div>
+        </form>
+        <p class="empty-state" id="empty-state">A clear list, a fresh start. Add your first task.</p>
+        <ul class="todo-list" id="todo-list" aria-label="Tasks"></ul>
+        <p class="todo-summary" id="todo-summary">0 tasks · 0 completed</p>
+        <p class="status" id="todo-status" role="status" aria-live="polite"></p>
+        <p class="demo-note" id="todo-hint">Tasks stay in memory only. Leaving or reloading this page clears the list.</p>
+        <noscript><p class="demo-note">Enable JavaScript to use this demo.</p></noscript>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner"><p>WEB Technologies 1 · Assignment 5</p><p>Sabyr Aslan · SE-2528</p></div>
+  </footer>
+</body>
+</html>
